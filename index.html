@@ -1,0 +1,283 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELVINE PRESTIGE | Cosmétiques & Compléments alimentaires</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f5f3f8;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#2b1445;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    header img{
+      width:120px;
+      height:auto;
+      border-radius:50%;
+      background:white;
+      padding:8px;
+    }
+
+    header h1{
+      margin-top:10px;
+      font-size:2.3rem;
+      letter-spacing:2px;
+    }
+
+    header p{
+      font-style:italic;
+      color:#d9c8ff;
+    }
+
+    nav{
+      background:#4b2675;
+      text-align:center;
+      padding:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 12px;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:linear-gradient(rgba(43,20,69,0.75), rgba(43,20,69,0.75)),
+      url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+    }
+
+    .hero h2{
+      font-size:2.2rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:1.1rem;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:50px 20px;
+    }
+
+    .section-title{
+      text-align:center;
+      color:#2b1445;
+      margin-bottom:35px;
+      font-size:2rem;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.12);
+      transition:transform 0.2s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .card h3{
+      color:#2b1445;
+      margin-bottom:10px;
+    }
+
+    .price{
+      font-size:1.2rem;
+      font-weight:bold;
+      color:#7a2fd1;
+      margin:12px 0;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#25D366;
+      color:white;
+      padding:12px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .about{
+      background:white;
+      border-radius:15px;
+      padding:30px;
+      margin-top:50px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .delivery{
+      background:#2b1445;
+      color:white;
+      border-radius:15px;
+      padding:30px;
+      margin-top:40px;
+      text-align:center;
+    }
+
+    footer{
+      background:#1b102d;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:1.8rem;
+      }
+
+      .hero h2{
+        font-size:1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-elvine-prestige.jpg" alt="Logo Elvine Prestige">
+  <h1>ELVINE PRESTIGE</h1>
+  <p>Plus haut, plus prestigieux</p>
+</header>
+
+<nav>
+  <a href="#produits">Produits</a>
+  <a href="#apropos">À propos</a>
+  <a href="#livraison">Livraison</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Cosmétiques & Compléments alimentaires Longrich</h2>
+  <p>
+    Découvrez une sélection de produits de qualité pour le soin, l’hygiène et le bien-être quotidien à Ouagadougou.
+  </p>
+</section>
+
+<div class="container">
+
+  <h2 id="produits" class="section-title">Nos Produits</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="1000711959.jpg" alt="Savon au bambou Longrich">
+      <div class="card-content">
+        <h3>Savon au bambou Longrich</h3>
+        <p>Hygiène quotidienne • Savon noir au bambou naturel.</p>
+        <div class="price">7 000 FCFA</div>
+        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Savon%20au%20bambou" target="_blank">
+          Commander
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1000711962.jpg" alt="SOD Cream Longrich">
+      <div class="card-content">
+        <h3>SOD Cream Longrich</h3>
+        <p>Lait corporel hydratant pour le soin quotidien de la peau.</p>
+        <div class="price">6 000 FCFA</div>
+        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20SOD%20Cream" target="_blank">
+          Commander
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1000711960.jpg" alt="Thé Vert Longrich">
+      <div class="card-content">
+        <h3>Thé Vert Longrich</h3>
+        <p>Infusion bien-être à base de thé vert.</p>
+        <div class="price">7 000 FCFA</div>
+        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Th%C3%A9%20Vert" target="_blank">
+          Commander
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="1000711963.jpg" alt="Thé Marron Longrich">
+      <div class="card-content">
+        <h3>Thé Marron Longrich</h3>
+        <p>Infusion traditionnelle Longrich.</p>
+        <div class="price">7 000 FCFA</div>
+        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Th%C3%A9%20Marron" target="_blank">
+          Commander
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="apropos" class="about">
+    <h2 class="section-title">À propos</h2>
+    <p>
+      <strong>ELVINE PRESTIGE</strong> est une boutique spécialisée dans les produits cosmétiques et compléments alimentaires Longrich.
+      Située à <strong>Tampouy, Ouagadougou</strong>, notre mission est d’offrir des produits de qualité et un service de proximité à nos clients.
+    </p>
+  </div>
+
+  <div id="livraison" class="delivery">
+    <h2>Livraison & Commande</h2>
+    <p>📍 Livraison à Tampouy et dans plusieurs quartiers de Ouagadougou.</p>
+    <p>💳 Paiement à la livraison possible selon la zone.</p>
+    <p>📲 Commande rapide via WhatsApp.</p>
+  </div>
+
+</div>
+
+<footer id="contact">
+  <h3>ELVINE PRESTIGE</h3>
+  <p>📍 Quartier Tampouy, Ouagadougou – Burkina Faso</p>
+  <p>📲 WhatsApp : <strong>+226 76 99 84 99</strong></p>
+  <p>© 2026 ELVINE PRESTIGE – Tous droits réservés.</p>
+  <p><em>Plus haut, plus prestigieux</em></p>
+</footer>
+
+</body>
+</html>
