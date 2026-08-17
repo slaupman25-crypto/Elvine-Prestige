@@ -1,283 +1,1251 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELVINE PRESTIGE | Cosmétiques & Compléments alimentaires</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      background:#f5f3f8;
-      color:#222;
-      line-height:1.6;
-    }
+<meta name="description" content="Elvine Prestige - Vente de produits cosmétiques, bien-être et compléments alimentaires à Tampouy.">
 
-    header{
-      background:#2b1445;
-      color:white;
-      padding:20px;
-      text-align:center;
-    }
+<title>Elvine Prestige | Plus haut, plus prestigieux</title>
 
-    header img{
-      width:120px;
-      height:auto;
-      border-radius:50%;
-      background:white;
-      padding:8px;
-    }
+<style>
+:root {
+  --violet:#6d28d9;
+  --violet2:#8b5cf6;
+  --gold:#d4af37;
+  --dark:#17121f;
+  --light:#faf8ff;
+  --muted:#6b6475;
+  --white:#fff;
+}
 
-    header h1{
-      margin-top:10px;
-      font-size:2.3rem;
-      letter-spacing:2px;
-    }
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-    header p{
-      font-style:italic;
-      color:#d9c8ff;
-    }
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:var(--dark);
+  line-height:1.55;
+}
 
-    nav{
-      background:#4b2675;
-      text-align:center;
-      padding:10px;
-    }
+header {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(23,18,31,.97);
+  color:#fff;
+  box-shadow:0 3px 16px rgba(0,0,0,.15);
+}
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 12px;
-      font-weight:bold;
-    }
+.nav {
+  max-width:1150px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
 
-    .hero{
-      background:linear-gradient(rgba(43,20,69,0.75), rgba(43,20,69,0.75)),
-      url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-      color:white;
-      text-align:center;
-      padding:90px 20px;
-    }
+.logo-wrap {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
 
-    .hero h2{
-      font-size:2.2rem;
-      margin-bottom:15px;
-    }
+.logo-wrap img {
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:12px;
+}
 
-    .hero p{
-      font-size:1.1rem;
-      max-width:700px;
-      margin:auto;
-    }
+.logo-text {
+  font-weight:800;
+  font-size:21px;
+  letter-spacing:.5px;
+}
 
-    .container{
-      max-width:1200px;
-      margin:auto;
-      padding:50px 20px;
-    }
+.logo-text span {
+  display:block;
+  font-size:11px;
+  color:#d9c6ff;
+  font-weight:500;
+}
 
-    .section-title{
-      text-align:center;
-      color:#2b1445;
-      margin-bottom:35px;
-      font-size:2rem;
-    }
+nav a {
+  color:#fff;
+  text-decoration:none;
+  margin-left:16px;
+  font-size:14px;
+}
 
-    .products{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-      gap:25px;
-    }
+.hero {
+  background:linear-gradient(135deg,#241531,#5b21b6 55%,#a78bfa);
+  color:#fff;
+  padding:70px 20px;
+}
 
-    .card{
-      background:white;
-      border-radius:15px;
-      overflow:hidden;
-      box-shadow:0 4px 12px rgba(0,0,0,0.12);
-      transition:transform 0.2s;
-    }
+.hero-inner {
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:35px;
+  align-items:center;
+}
 
-    .card:hover{
-      transform:translateY(-5px);
-    }
+.badge {
+  display:inline-block;
+  border:1px solid rgba(255,255,255,.35);
+  padding:7px 13px;
+  border-radius:99px;
+  margin-bottom:16px;
+  font-size:13px;
+}
 
-    .card img{
-      width:100%;
-      height:230px;
-      object-fit:cover;
-    }
+h1 {
+  font-size:clamp(38px,6vw,70px);
+  line-height:1.02;
+  margin-bottom:14px;
+}
 
-    .card-content{
-      padding:20px;
-      text-align:center;
-    }
+.slogan {
+  font-size:22px;
+  color:#f4e9ff;
+  margin-bottom:12px;
+}
 
-    .card h3{
-      color:#2b1445;
-      margin-bottom:10px;
-    }
+.hero p {
+  max-width:650px;
+  color:#eee4ff;
+}
 
-    .price{
-      font-size:1.2rem;
-      font-weight:bold;
-      color:#7a2fd1;
-      margin:12px 0;
-    }
+.cta {
+  display:inline-block;
+  margin-top:25px;
+  background:var(--gold);
+  color:#1b1420;
+  text-decoration:none;
+  font-weight:800;
+  padding:13px 22px;
+  border-radius:10px;
+}
 
-    .btn{
-      display:inline-block;
-      background:#25D366;
-      color:white;
-      padding:12px 20px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
-    }
+.hero-card {
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  padding:25px;
+  border-radius:22px;
+}
 
-    .about{
-      background:white;
-      border-radius:15px;
-      padding:30px;
-      margin-top:50px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.08);
-    }
+.hero-card strong {
+  font-size:31px;
+  display:block;
+  color:#fff;
+}
 
-    .delivery{
-      background:#2b1445;
-      color:white;
-      border-radius:15px;
-      padding:30px;
-      margin-top:40px;
-      text-align:center;
-    }
+section {
+  max-width:1150px;
+  margin:auto;
+  padding:58px 20px;
+}
 
-    footer{
-      background:#1b102d;
-      color:white;
-      text-align:center;
-      padding:25px;
-      margin-top:50px;
-    }
+.section-title {
+  text-align:center;
+  font-size:34px;
+  margin-bottom:10px;
+}
 
-    @media(max-width:768px){
-      header h1{
-        font-size:1.8rem;
-      }
+.section-sub {
+  text-align:center;
+  color:var(--muted);
+  max-width:700px;
+  margin:0 auto 30px;
+}
 
-      .hero h2{
-        font-size:1.6rem;
-      }
-    }
-  </style>
+.filters {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.filters button {
+  border:1px solid #d8cce9;
+  background:#fff;
+  padding:9px 15px;
+  border-radius:99px;
+  cursor:pointer;
+}
+
+.filters button.active {
+  background:var(--violet);
+  color:#fff;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product {
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 7px 24px rgba(52,31,77,.09);
+  border:1px solid #eee5f8;
+  display:flex;
+  flex-direction:column;
+}
+
+.product-img {
+  height:220px;
+  background:linear-gradient(135deg,#f1eaff,#fff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px;
+}
+
+.product-img img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.placeholder {
+  font-size:70px;
+}
+
+.product-body {
+  padding:19px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.category {
+  font-size:11px;
+  text-transform:uppercase;
+  color:var(--violet);
+  font-weight:800;
+  letter-spacing:.7px;
+}
+
+.product h3 {
+  font-size:21px;
+  margin:5px 0;
+}
+
+.product p {
+  font-size:14px;
+  color:var(--muted);
+  flex:1;
+}
+
+.price {
+  font-size:22px;
+  font-weight:900;
+  margin:13px 0;
+  color:#2b163e;
+}
+
+.order {
+  display:block;
+  text-align:center;
+  background:var(--violet);
+  color:#fff;
+  text-decoration:none;
+  padding:11px;
+  border-radius:9px;
+  font-weight:800;
+}
+
+.info {
+  background:#fff;
+}
+
+.info-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.info-box {
+  padding:25px;
+  border-radius:16px;
+  background:#faf7ff;
+  border:1px solid #eadff7;
+  text-align:center;
+}
+
+.info-box .icon {
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.testimonials {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.testimonial {
+  background:#fff;
+  padding:24px;
+  border-radius:16px;
+  box-shadow:0 6px 20px rgba(0,0,0,.06);
+  border-left:4px solid var(--gold);
+}
+
+.stars {
+  color:#d4af37;
+  letter-spacing:2px;
+}
+
+.reference {
+  background:#17121f;
+  color:#fff;
+  border-radius:24px;
+  padding:35px;
+  text-align:center;
+}
+
+.reference a {
+  display:inline-block;
+  margin-top:18px;
+  color:#fff;
+  background:var(--gold);
+  padding:12px 18px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:800;
+}
+
+footer {
+  background:#17121f;
+  color:#ddd;
+  text-align:center;
+  padding:30px 20px;
+}
+
+footer strong {
+  color:#fff;
+}
+
+.lang {
+  background:transparent;
+  color:#fff;
+  border:1px solid #6e6579;
+  padding:7px 10px;
+  border-radius:7px;
+}
+
+@media(max-width:850px) {
+
+  .hero-inner,
+  .grid,
+  .info-grid,
+  .testimonials {
+    grid-template-columns:1fr 1fr;
+  }
+
+  nav a {
+    display:none;
+  }
+}
+
+@media(max-width:560px) {
+
+  .hero-inner,
+  .grid,
+  .info-grid,
+  .testimonials {
+    grid-template-columns:1fr;
+  }
+
+  .hero {
+    padding:48px 18px;
+  }
+
+  section {
+    padding:45px 16px;
+  }
+
+  .nav {
+    padding:9px 12px;
+  }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo-elvine-prestige.jpg" alt="Logo Elvine Prestige">
-  <h1>ELVINE PRESTIGE</h1>
-  <p>Plus haut, plus prestigieux</p>
-</header>
 
-<nav>
-  <a href="#produits">Produits</a>
-  <a href="#apropos">À propos</a>
-  <a href="#livraison">Livraison</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="nav">
 
-<section class="hero">
-  <h2>Cosmétiques & Compléments alimentaires Longrich</h2>
-  <p>
-    Découvrez une sélection de produits de qualité pour le soin, l’hygiène et le bien-être quotidien à Ouagadougou.
-  </p>
-</section>
+<div class="logo-wrap">
 
-<div class="container">
+<img src="logo.png"
+alt="Logo Elvine Prestige">
 
-  <h2 id="produits" class="section-title">Nos Produits</h2>
+<div class="logo-text">
 
-  <div class="products">
+ELVINE PRESTIGE
 
-    <div class="card">
-      <img src="1000711959.jpg" alt="Savon au bambou Longrich">
-      <div class="card-content">
-        <h3>Savon au bambou Longrich</h3>
-        <p>Hygiène quotidienne • Savon noir au bambou naturel.</p>
-        <div class="price">7 000 FCFA</div>
-        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Savon%20au%20bambou" target="_blank">
-          Commander
-        </a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="1000711962.jpg" alt="SOD Cream Longrich">
-      <div class="card-content">
-        <h3>SOD Cream Longrich</h3>
-        <p>Lait corporel hydratant pour le soin quotidien de la peau.</p>
-        <div class="price">6 000 FCFA</div>
-        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20SOD%20Cream" target="_blank">
-          Commander
-        </a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="1000711960.jpg" alt="Thé Vert Longrich">
-      <div class="card-content">
-        <h3>Thé Vert Longrich</h3>
-        <p>Infusion bien-être à base de thé vert.</p>
-        <div class="price">7 000 FCFA</div>
-        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Th%C3%A9%20Vert" target="_blank">
-          Commander
-        </a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="1000711963.jpg" alt="Thé Marron Longrich">
-      <div class="card-content">
-        <h3>Thé Marron Longrich</h3>
-        <p>Infusion traditionnelle Longrich.</p>
-        <div class="price">7 000 FCFA</div>
-        <a class="btn" href="https://wa.me/22676998499?text=Je%20souhaite%20commander%20le%20Th%C3%A9%20Marron" target="_blank">
-          Commander
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <div id="apropos" class="about">
-    <h2 class="section-title">À propos</h2>
-    <p>
-      <strong>ELVINE PRESTIGE</strong> est une boutique spécialisée dans les produits cosmétiques et compléments alimentaires Longrich.
-      Située à <strong>Tampouy, Ouagadougou</strong>, notre mission est d’offrir des produits de qualité et un service de proximité à nos clients.
-    </p>
-  </div>
-
-  <div id="livraison" class="delivery">
-    <h2>Livraison & Commande</h2>
-    <p>📍 Livraison à Tampouy et dans plusieurs quartiers de Ouagadougou.</p>
-    <p>💳 Paiement à la livraison possible selon la zone.</p>
-    <p>📲 Commande rapide via WhatsApp.</p>
-  </div>
+<span>Plus haut, plus prestigieux</span>
 
 </div>
 
-<footer id="contact">
-  <h3>ELVINE PRESTIGE</h3>
-  <p>📍 Quartier Tampouy, Ouagadougou – Burkina Faso</p>
-  <p>📲 WhatsApp : <strong>+226 76 99 84 99</strong></p>
-  <p>© 2026 ELVINE PRESTIGE – Tous droits réservés.</p>
-  <p><em>Plus haut, plus prestigieux</em></p>
+</div>
+
+<div>
+
+<nav>
+
+<a href="#accueil">Accueil</a>
+
+<a href="#produits">Produits</a>
+
+<a href="#temoignages">Témoignages</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<button class="lang"
+onclick="toggleLang()">
+
+FR / EN
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero" id="accueil">
+
+<div class="hero-inner">
+
+<div>
+
+<span class="badge">
+
+COSMÉTIQUE • BIEN-ÊTRE • COMPLÉMENTS
+
+</span>
+
+<h1>
+
+Elvine Prestige
+
+</h1>
+
+<div class="slogan">
+
+Plus haut, plus prestigieux
+
+</div>
+
+<p>
+
+Découvrez une sélection de produits pour
+l'hygiène, la beauté et le bien-être,
+avec commande simple par WhatsApp.
+
+</p>
+
+<a class="cta"
+href="https://wa.me/22676998499?text=Bonjour%20Elvine%20Prestige,%20je%20souhaite%20passer%20une%20commande."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+
+<div class="hero-card">
+
+<strong>7 produits</strong>
+
+<span>
+
+Une sélection pensée pour votre quotidien.
+
+</span>
+
+<br><br>
+
+<strong>Tampouy</strong>
+
+<span>
+
+Ouagadougou, Burkina Faso
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="produits">
+
+<h2 class="section-title">
+
+Nos produits
+
+</h2>
+
+<p class="section-sub">
+
+Découvrez notre sélection.
+Cliquez sur « Commander maintenant »
+pour nous contacter directement.
+
+</p>
+
+
+<div class="filters">
+
+<button class="active"
+onclick="filterProducts('all',this)">
+
+Tous
+
+</button>
+
+<button onclick="filterProducts('cosmetique',this)">
+
+Cosmétique
+
+</button>
+
+<button onclick="filterProducts('bienetre',this)">
+
+Bien-être
+
+</button>
+
+<button onclick="filterProducts('complement',this)">
+
+Compléments
+
+</button>
+
+</div>
+
+
+
+<div class="grid" id="productGrid">
+
+
+<!-- SAVON -->
+
+<article class="product"
+data-cat="cosmetique">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+🧼
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Cosmétique
+
+</span>
+
+<h3>
+
+Savon au bambou Longrich
+
+</h3>
+
+<p>
+
+Savon destiné à l'hygiène quotidienne
+et au soin de la peau.
+
+</p>
+
+<div class="price">
+
+7 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20le%20Savon%20au%20bambou%20Longrich%20à%207000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- SOD CREAM -->
+
+<article class="product"
+data-cat="cosmetique">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+🧴
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Cosmétique
+
+</span>
+
+<h3>
+
+SOD Cream
+
+</h3>
+
+<p>
+
+Lait corporel pour l'entretien
+et l'hydratation de la peau.
+
+</p>
+
+<div class="price">
+
+6 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20la%20SOD%20Cream%20à%206000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- THE VERT -->
+
+<article class="product"
+data-cat="bienetre">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+🍵
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Bien-être
+
+</span>
+
+<h3>
+
+Thé Vert
+
+</h3>
+
+<p>
+
+Boisson à base de thé vert
+pour accompagner votre routine quotidienne.
+
+</p>
+
+<div class="price">
+
+7 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20le%20Thé%20Vert%20à%207000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- THE MARRON -->
+
+<article class="product"
+data-cat="bienetre">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+🍵
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Bien-être
+
+</span>
+
+<h3>
+
+Thé Marron
+
+</h3>
+
+<p>
+
+Thé proposé dans la gamme
+bien-être d'Elvine Prestige.
+
+</p>
+
+<div class="price">
+
+7 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20le%20Thé%20Marron%20à%207000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- DENTIFRICE -->
+
+<article class="product"
+data-cat="cosmetique">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+🦷
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Hygiène
+
+</span>
+
+<h3>
+
+Dentifrice Longrich au thé blanc
+
+</h3>
+
+<p>
+
+Dentifrice pour l'hygiène
+bucco-dentaire quotidienne,
+au thé blanc.
+
+</p>
+
+<div class="price">
+
+4 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20le%20Dentifrice%20Longrich%20au%20thé%20blanc%20à%204000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- GOBELET -->
+
+<article class="product"
+data-cat="bienetre">
+
+<div class="product-img">
+
+<div class="placeholder">
+
+💧
+
+</div>
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Bien-être
+
+</span>
+
+<h3>
+
+Gobelet alcalin Longrich
+
+</h3>
+
+<p>
+
+Gobelet avec système de filtration
+et minéralisation présenté
+pour la préparation de l'eau.
+
+</p>
+
+<div class="price">
+
+55 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20le%20Gobelet%20alcalin%20Longrich%20à%2055000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<!-- ARTHRO -->
+
+<article class="product"
+data-cat="complement">
+
+<div class="product-img">
+
+<img src="arthro-supreviver.png"
+alt="Arthro SupReviver Longrich">
+
+</div>
+
+<div class="product-body">
+
+<span class="category">
+
+Complément alimentaire
+
+</span>
+
+<h3>
+
+Arthro SupReviver Longrich
+
+</h3>
+
+<p>
+
+Complément alimentaire présenté
+pour accompagner le bien-être
+et la mobilité articulaire.
+
+</p>
+
+<div class="price">
+
+23 000 FCFA
+
+</div>
+
+<a class="order"
+href="https://wa.me/22676998499?text=Je%20commande%20l'Arthro%20SupReviver%20Longrich%20à%2023000%20FCFA."
+target="_blank">
+
+Commander maintenant
+
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<section class="info">
+
+<h2 class="section-title">
+
+Pourquoi Elvine Prestige ?
+
+</h2>
+
+<p class="section-sub">
+
+Une approche simple :
+de beaux produits, une information claire
+et une commande directe.
+
+</p>
+
+
+<div class="info-grid">
+
+
+<div class="info-box">
+
+<div class="icon">✨</div>
+
+<h3>Qualité</h3>
+
+<p>
+
+Une sélection de produits
+pour votre quotidien.
+
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<div class="icon">📦</div>
+
+<h3>Commande simple</h3>
+
+<p>
+
+Contact direct par WhatsApp
+pour confirmer votre commande.
+
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<div class="icon">🤝</div>
+
+<h3>Proximité</h3>
+
+<p>
+
+Elvine Prestige vous accueille
+à Tampouy, Ouagadougou.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="temoignages">
+
+<h2 class="section-title">
+
+Témoignages
+
+</h2>
+
+<p class="section-sub">
+
+Quelques exemples de présentation.
+Remplacez-les par vos témoignages
+clients réels.
+
+</p>
+
+
+<div class="testimonials">
+
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+« Commande simple et produit bien présenté.
+Une expérience agréable. »
+
+</p>
+
+<br>
+
+<strong>
+
+— Cliente Elvine Prestige
+
+</strong>
+
+</div>
+
+
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+« J'apprécie la disponibilité et la rapidité
+des échanges sur WhatsApp. »
+
+</p>
+
+<br>
+
+<strong>
+
+— Client Elvine Prestige
+
+</strong>
+
+</div>
+
+
+
+<div class="testimonial">
+
+<div class="stars">
+
+★★★★★
+
+</div>
+
+<p>
+
+« Une boutique pratique pour découvrir
+différents produits de bien-être. »
+
+</p>
+
+<br>
+
+<strong>
+
+— Cliente Elvine Prestige
+
+</strong>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<div class="reference">
+
+<h2>
+
+Référence Longrich
+
+</h2>
+
+<p>
+
+Pour consulter les informations officielles
+disponibles sur la marque, visitez son site
+de référence.
+
+</p>
+
+<a href="https://www.longrich.com/"
+target="_blank"
+rel="noopener">
+
+Visiter Longrich
+
+</a>
+
+<p style="margin-top:22px">
+
+<strong>
+
+Elvine Prestige
+
+</strong>
+
+<br>
+
+Tampouy — Ouagadougou, Burkina Faso
+
+<br>
+
+WhatsApp : +226 76 99 84 99
+
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<strong>
+
+ELVINE PRESTIGE
+
+</strong>
+
+— Plus haut, plus prestigieux
+
+<br>
+
+<span>
+
+© 2026 Elvine Prestige.
+Tous droits réservés.
+
+</span>
+
 </footer>
+
+
+
+<script>
+
+function filterProducts(cat, btn) {
+
+document
+.querySelectorAll('.filters button')
+.forEach(b => b.classList.remove('active'));
+
+btn.classList.add('active');
+
+document
+.querySelectorAll('.product')
+.forEach(p => {
+
+p.style.display =
+(cat === 'all' || p.dataset.cat === cat)
+? 'flex'
+: 'none';
+
+});
+
+}
+
+
+function toggleLang() {
+
+alert(
+"Version anglaise : les boutons et contenus principaux peuvent être traduits."
+);
+
+}
+
+</script>
 
 </body>
 </html>
